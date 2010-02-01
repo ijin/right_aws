@@ -108,3 +108,18 @@ task :testrds do
 end
 
 # vim: syntax=Ruby
+
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "ijin-right_aws"
+    gemspec.summary = "Interface classes for the Amazon EC2/EBS, SQS, S3, SDB, and ACF Web Services"
+    gemspec.email = "ijinpublic+gem@gmail.com"
+    gemspec.homepage = "http://rightaws.rubyforge.org"
+    #gemspec.description = "TODO"
+    gemspec.authors = ["RightScale, Inc."]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+end
